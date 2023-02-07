@@ -1,0 +1,38 @@
+/* specificity */
+/* setiap deklarasi css (selector) memiliki berat yang berbeda. Berat tersebut menentukan seberapa spesifik sebuah elemen dapat dipilih oleh selector*/
+/* contoh :
+selector elemen html : bisa digambarkan beratnya 1
+selector class(.) : bisa digambarkan beratnya 10x lipat dibanding selector elemen html 
+selector id(#) : bisa digambarkan beratnya 100x lipat dibanding selector elemen html
+dan berat tersebut menentukan seberapa spesifik selector tersebut*/
+
+p {
+  color: red;
+}
+
+p {
+  color: green;
+}
+/* sistem CSS membaca code dari atas kebawah, jadi jika ada code CSS yang memerintahkan untuk merubah style properti dan selector yang sama, yang di baca oleh sistem CSS yang paling bawah */
+
+#heada {
+  color: blue;
+}
+
+.headb {
+  color: green;
+}
+
+h2 {
+  color: blueviolet;
+}
+
+.headc {
+  color: aqua;
+}
+
+/* sistem CSS akan membaca selector yang memilihi spesificity yang lebih berat, seperti :
+bila didalam terdapat selector id, class, dan element html sistem akan membaca yang lebih berat spesificity yaitu id dan akan mengabaikan yang lebih ringat yaitu class dan element html */
+/* id dengan elemen html > id yang di baca oleh sistem CSS */
+/* id dengan class html > id yang di baca oleh sistem CSS */
+/* class dengan elemen html > class yang di baca oleh sistem CSS */

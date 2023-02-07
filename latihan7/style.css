@@ -1,0 +1,24 @@
+/* inheritance / pewarisan */
+/* sebuah elemen mewarisi beberapa nilai properti yang dimiliki oleh elemen perant-nya / pembungkusnya*/
+/* parent > ayah > pembungkusnya */
+/* child > anak > yang dibungkus */
+/* contoh : 
+<ol>
+    <li></li>
+</ol> 
+ol sebagia parent > ayah > pembungkusnya
+li sebagia child > anak > yang dibungkus
+*/
+/* properti yang diwariskan seperti : color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transfrom, visibility, white-space */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgray;
+}
+
+/* secara default elemen a tidak mewarisi properti color dari elemen parent > ayah > pembungkusnya */
+
+a {
+  color: inherit;
+}
+/* sistem CSS membaca tolong elemen a untuk properti color di sesuaikan dengan properti elemen parentnya > ayah > pembungkusnya  */

@@ -1,0 +1,74 @@
+/* pseudo class */
+/* adalah kelas semu yang dimiliki oleh sebuah elemen html, yang membuat kita dapat mendefinisikan style pada "keadaan tertentu" dari elemen tersebut */
+/* pseudo calss terbagi beberapa type : :link, :hover, :active, :visited */
+/* :link > merupakan style default pada sebuah link (a yang memiliki href) */
+/* :hover > merupakan style ketika kursor mouse berada diatas sebuth link / elemen */
+/* :active > merupakan style ketika sebuah link di-klik (keadaan aktif) */
+/* :visited > merupakan style ketika sebuah link sudah pernah dikunjungi sebelumnya (menggunakan browser yang sama) */
+
+.hello:link {
+  color: orange;
+}
+
+.hello:hover {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.hello:active {
+  font-style: italic;
+}
+
+.hello:visited {
+  color: red;
+}
+
+/* ================================================================= */
+
+/* pseudo class juga ada yang berhubungan dengan posisi elemen */
+/* :first-child > untuk memilih elemen pertama dari sebuah parent (elemen pembungkusnya) */
+/* :last-child > untuk memilih terakhir dari sebuah parent (elemen pembungkusnya) */
+/* :nth-child(n) > untuk memilih elemen ke-n dari sebuah parent (elemen pembungkusnya)
+n bisa berarti urutan (1), (2), ... atau pola (2n), (3n+2), (4n-1) atau ganjil dan genap (even) dan (odd) */
+
+li:first-child a {
+  color: red;
+}
+/* sistem membaca CSS tolong select elemet a anak pertama dari elemet li */
+
+li:last-child a {
+  color: green;
+}
+/* sistem membaca CSS tolong select elemet a anak terakhir dari elemet li */
+
+li:nth-child(6n + 1) a {
+  color: aqua;
+}
+/* sistem membaca CSS tolong select elemet a kelipatan 6 dimulai dari anak ke-1 dari elemet li */
+
+li:nth-child(even) a {
+  color: brown;
+}
+/* sistem membaca CSS tolong select elemet a anak yang bernilai genap dari elemet li */
+
+li:nth-child(odd) a:hover {
+  color: azure;
+}
+/* sistem membaca CSS tolong select elemet a anak yang bernilai ganjil dari elemet li, jika korser diatas akan berubah berwarna azure */
+
+/* ==================================================================== */
+
+/* pseudo calss yang berhubungan dengan posisi elemen */
+/* :first-of-type > untuk memilih elemen pertama dari sebuah jenis / tipe tag */
+/* :last-of-type > untuk meimilih elemen terakhir dari sebuah jenis / tipe tag */
+
+p:first-of-type {
+  color: blue;
+}
+/* sistem membaca CSS tolong select elemet p pertama dan ganti warna menjadi warna blue  */
+
+p:last-of-type {
+  color: brown;
+}
+/* sistem membaca CSS tolong select elemet p terakhir dan ganti warna menjadi warna brown  */

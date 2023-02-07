@@ -1,0 +1,43 @@
+/* property font styling
+font-family : untuk mengatur jenis font yang akan digunakan
+font-size : untk mengatur ukuran font
+font-weight : untuk mengatur ketebalan font
+font-variant : untuk mengubah font menjadi small caps
+font-tyle : untuk mengubah dont menjadi bercetak miring/tebal/garis bawah
+line-height : untuk mengatur spasi antar baris */
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  font-weight: bolder;
+  font-variant: small-caps;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: lighter;
+  font-variant: normal;
+  line-height: 1.6em;
+}
+
+miring {
+  font-style: oblique;
+}
+
+singkat {
+  font: small-caps 1000 50px sans-serif;
+}
+
+/* shorthand : cara penulisan secara singkat untuk penulisan font */
+/* body { 
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-family: arial, helvetica, sans-serif;
+}*/
+/* menjadi */
+/* body { font: italic normal bold 16px/1.6em arial, helvetica, sans-serif;*/
+/* urutannya :  font-style font-variant font-weight font-size/line-height font-family */

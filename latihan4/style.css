@@ -1,0 +1,30 @@
+/* background property */
+/* background-color : untuk mengatur warna pada background */
+/* background-image : untuk mengatur gambar yang akan digunakan pada background */
+/* background-position : untuk mengatur posisi gambar pada background */
+/* value property background-position */
+/* top left
+top center
+top right
+center left
+center center
+center right
+bottom left
+bottom center
+bottom right
+x% y%
+x-pos, y-pos
+ */
+/* background-repeat : untuk mengatur jenis pengulangan gambar pada background */
+
+body {
+  background-color: lightblue;
+  background-image: url(bg/artworks.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* background: lightblue url(bg/artworks.jpg) top center no-repeat; */
+}
+
+/* singkat penulisan background */
+/* background : color url() position repeat */
+/* contoh : background : lightblue url(bg/artworks.jpg) top center no-repeat*/

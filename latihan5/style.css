@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  color: green;
+}
+/* koma didalam penulisan selector diartikan sebagai DAN */
+
+a {
+  text-decoration: none;
+}
+ul li a {
+  color: orange;
+}
+
+ol li a {
+  color: red;
+}
+/* spasi didalam penulisan selector diartikan sebagai DIDALAM */
+
+#p1 {
+  color: orange;
+}
+
+.p2 {
+  color: red;
+}
+
+.cetak-tebal {
+  font-weight: bold;
+}
+
+/* penggunaan selector id menggunakan tanda #, dan class menggunakan . */
+/* untuk penggunaan id sebaiknya hanya 1 di setiap element html, dan id nanti di gunakan untuk pembuatan oprasi javascript*/
+/* untuk penggunaan class boleh lebih dari 1 di setiap element html, di anjurkan untuk style CSS menggunakan class dibanding id */
+
+p.cetak-tebal {
+  font-size: 30px;
+}
+/* p.cetal-tebal : dibaca sistem untuk menselector class id yang berada di element html p, jadi jika ada element html lain yang memiliki class cetak-tebal tidak ikut berubah, seperti element a yang terdapat class cetak-tebal juga */

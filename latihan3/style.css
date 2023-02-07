@@ -1,0 +1,32 @@
+/* text styling property*/
+/*
+color : untuk memberikan warna
+text-align : untuk mengatur paragraf / teks > rata kiri, tengah, kanan, kiri kanan
+text-indent : untuk memberikan identasi pada paragraf / teks > jarak pragraf di baris pertama
+text-decoration : untuk mengatur dekorasi pada teks > garis bawah, dicoret
+text-transform : untuk mengubah jenis huruf menjadi huruf besar, kecil / kapital
+letter-spacing : untuk mengatur spasi antar huruf
+word-spacing : untuk mengatur spasi antar kata
+*/
+
+/* value property */
+/* color : 
+bisa menggunakan nama : red, lightseagreen, royalblue, ...
+bisa menggunakan hexadecimal : #ff000, #20b2aa, #4169e1, ...
+bisa menggunakan rgb : rgb(255,0,0), rgb(32,178,170), rgb(65,105,255), ... */
+
+h1 {
+  color: rgb(11, 225, 101);
+  font-size: 150px;
+}
+
+p {
+  text-indent: 50px;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+}
+
+coret {
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
